@@ -50,8 +50,8 @@ def converter_process_decipher(phrase):
     phrase = phrase.split('/')
     for letter in phrase:
         if letter != '':
-            deciphered_phrase.append(list(morse_dictionary_en.keys())[list(morse_dictionary_en.values()).index(letter)])
-    print(''.join(deciphered_phrase))
+            deciphered_phrase += list(morse_dictionary_en.keys())[list(morse_dictionary_en.values()).index(letter)]
+    print(deciphered_phrase)
 
 
 def converter_process_encrypt(phrase):
